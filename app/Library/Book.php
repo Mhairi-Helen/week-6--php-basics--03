@@ -12,7 +12,7 @@ class Book
 
     private $title;
     private $pages;
-    private $pageCount = 0;
+    private $pageCount = 1;
 
     //constructor method
 
@@ -26,14 +26,16 @@ class Book
 
     //to add on to the current page count  up to the number of pages of the book
 
-    public function read($pageRead) 
+    public function read(int $pageRead) : Book
     {
-        if ( $pageRead + $this->pageCount > $this->pages)
+        $currentPage = $this->pageCount +$pageRead;
+
+        if ( $currentPage > $this->pages)
         {
             return $this->pages;
         } else
         {
-            $this->pageCount += $pageRead;
+            $this->pageCount = $currentPage;
             return $this;
         }
         
@@ -51,7 +53,7 @@ class Book
 
     public function currentPage ()
     {
-       return $this->pageCount + 1;
+       return $this->pageCount;
 
     }
 

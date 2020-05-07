@@ -38,3 +38,27 @@ class Potato
     }
 
 }
+
+
+// class Potato
+// {   
+//     //class properties
+//     private $water = 0;
+       
+
+//     //methods
+
+//     public function water()
+//     {
+//         $this->water += 1;
+//         return $this;        
+//     }
+
+//     public function hasGrown() : bool
+//     {   
+//         return $this->water >= 5;
+        
+
+//     }
+
+// }
