@@ -57,5 +57,12 @@ class Book
 
     }
 
+    public function getTitle()
+
+    {
+
+        
+    }
+
 
 }
