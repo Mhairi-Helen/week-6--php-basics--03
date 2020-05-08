@@ -57,11 +57,11 @@ class Book
 
     }
 
-    public function getTitle()
+    public function title()
 
     {
-
-        
+        return $this->title;
+    
     }
 
 
